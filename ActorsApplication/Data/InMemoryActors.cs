@@ -91,7 +91,7 @@ namespace ActorsApplication.Data
                     FirstName = "Benedict",
                     ProfilePicture = "https://upload.wikimedia.org/wikipedia/commons/6/6e/BCumberbatch_Comic-Con_2019.jpg",
                     BirthYear = 1976,
-                    ShortBio = "A British actor known for his roles in Sherlock, Doctor Strange, and The Imitation Game."
+                    ShortBio = "A British actor known for his roles in Sherlock, Doctor Strange, The Imitation Game and pronouncing penguins as \"penwings, penlings\"."
                 }
             };
         }
