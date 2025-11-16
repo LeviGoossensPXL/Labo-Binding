@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:p="clr-namespace:ActorsApplication.Pages"
              x:Class="ActorsApplication.Pages.ActorsPage"
+             xmlns:data="clr-namespace:ActorsApplication.Data"
              Title="ActorsPage"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             x:DataType="p:ActorsPage">
 
     <ScrollView>
         <StackLayout>
@@ -12,14 +15,14 @@
                 FontSize="Medium" 
                 TextColor="Crimson" 
                 FontAttributes="Bold"/>
-            <CollectionView>
+            <CollectionView ItemsSource="{Binding Actors}">
 
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Horizontal" Span="4"/>
                 </CollectionView.ItemsLayout>
 
                 <CollectionView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="data:Actor">
 
                         <Grid Margin="6" >
                             <Grid.ColumnDefinitions>
@@ -27,7 +30,7 @@
                                 <ColumnDefinition Width="2*" />
                             </Grid.ColumnDefinitions>
 
-                            <Image Source="splash.png"
+                            <Image Source="{Binding ProfilePicture}"
                                    VerticalOptions="Start"
                                    HorizontalOptions="Start"
                                    Aspect="AspectFill"
@@ -42,10 +45,10 @@
                                          Orientation="Vertical">
 
                                 <Label VerticalOptions="Center"
-                                       Text=""
+                                       Text="{Binding FirstName}"
                                        FontAttributes="Bold" />
 
-                                <Label Text=""
+                                <Label Text="{Binding ShortBio}"
                                        MaxLines="4"
                                        VerticalOptions="Start"
                                        FontAttributes="Italic" />

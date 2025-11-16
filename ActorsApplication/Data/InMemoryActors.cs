@@ -17,7 +17,7 @@ namespace ActorsApplication.Data
                 {
                     LastName = "DiCaprio",
                     FirstName = "Leonardo",
-                    ProfilePicture = "https://upload.wikimedia.org/wikipedia/commons/4/46/Leonardo_Dicaprio_Cannes_2019.jpg",
+                    ProfilePicture = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F65%2F227665-050-D74A477E%2FAmerican-actor-Leonardo-DiCaprio-2016.jpg&f=1&nofb=1&ipt=bef02145bce512d12286b52156ab50b3757d48362aeaa998df4dfd33f6edf79f",
                     BirthYear = 1974,
                     ShortBio = "An American actor and producer known for his roles in Titanic, Inception, and The Revenant."
                 },
@@ -25,7 +25,7 @@ namespace ActorsApplication.Data
                 {
                     LastName = "Johansson",
                     FirstName = "Scarlett",
-                    ProfilePicture = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Scarlett_Johansson_by_Gage_Skidmore_2019.jpg/1200px-Scarlett_Johansson_by_Gage_Skidmore_2019.jpg",
+                    ProfilePicture = "https://i.pinimg.com/736x/11/da/31/11da31ec578fab0b16f963c69c64c323.jpg",
                     BirthYear = 1984,
                     ShortBio = "An American actress known for her roles in the Marvel Cinematic Universe and Lost in Translation."
                 },

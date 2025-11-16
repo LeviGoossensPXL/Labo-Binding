@@ -6,10 +6,11 @@ namespace ActorsApplication.Pages;
 
 public partial class ActorsPage : ContentPage
 {
-
+    public ObservableCollection<Actor> Actors { get; set; } = new ObservableCollection<Actor>(InMemoryActors.GetActors());
     public ActorsPage()
 	{
 		InitializeComponent();
+        BindingContext = this;
 	}
 
     private async void AddActorClicked(object sender, EventArgs e)

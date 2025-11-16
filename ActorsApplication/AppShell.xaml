@@ -4,12 +4,18 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:pages="clr-namespace:ActorsApplication.Pages"
-    Shell.FlyoutBehavior="Disabled"
     Title="ActorsApplication">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate pages:ActorsPage}"
-        Route="Home" />
+        Title="ViewToViewBinding"
+        ContentTemplate="{DataTemplate pages:ViewToViewBinding}"/>
+
+    <ShellContent
+        Title="ActorDetail"
+        ContentTemplate="{DataTemplate pages:ActorDetailPage}"/>
+
+    <ShellContent
+        Title="Actors"
+        ContentTemplate="{DataTemplate pages:ActorsPage}"/>
 
 </Shell>
