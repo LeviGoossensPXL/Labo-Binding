@@ -8,14 +8,12 @@
 
     <ShellContent
         Title="ViewToViewBinding"
-        ContentTemplate="{DataTemplate pages:ViewToViewBinding}"/>
-
-    <ShellContent
-        Title="ActorDetail"
-        ContentTemplate="{DataTemplate pages:ActorDetailPage}"/>
+        ContentTemplate="{DataTemplate pages:ViewToViewBinding}"
+        Route="ViewToViewBinding"/>
 
     <ShellContent
         Title="Actors"
-        ContentTemplate="{DataTemplate pages:ActorsPage}"/>
+        ContentTemplate="{DataTemplate pages:ActorsPage}"
+        Route="ActorsPage"/>
 
 </Shell>

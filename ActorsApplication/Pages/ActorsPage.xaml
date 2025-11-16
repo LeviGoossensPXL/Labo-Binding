@@ -23,39 +23,47 @@
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="data:Actor">
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="Delete"
+                                               BackgroundColor="Red"/>
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+                            <Border>
+                            <Grid Margin="6" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="2*" />
+                                </Grid.ColumnDefinitions>
 
-                        <Grid Margin="6" >
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="1*" />
-                                <ColumnDefinition Width="2*" />
-                            </Grid.ColumnDefinitions>
-
-                            <Image Source="{Binding ProfilePicture}"
-                                   VerticalOptions="Start"
-                                   HorizontalOptions="Start"
-                                   Aspect="AspectFill"
-                                   WidthRequest="100"
-                                   Margin="8"
-                                   HeightRequest="150" />
-
-                            <StackLayout WidthRequest="200"
-                                         Margin="8"
-                                         VerticalOptions="Start"
-                                         Grid.Column="1"
-                                         Orientation="Vertical">
-
-                                <Label VerticalOptions="Center"
-                                       Text="{Binding FirstName}"
-                                       FontAttributes="Bold" />
-
-                                <Label Text="{Binding ShortBio}"
-                                       MaxLines="4"
+                                <Image Source="{Binding ProfilePicture}"
                                        VerticalOptions="Start"
-                                       FontAttributes="Italic" />
-                            </StackLayout>
+                                       HorizontalOptions="Start"
+                                       Aspect="AspectFill"
+                                       WidthRequest="100"
+                                       Margin="8"
+                                       HeightRequest="150" />
 
-                        </Grid>
+                                <StackLayout WidthRequest="200"
+                                             Margin="8"
+                                             VerticalOptions="Start"
+                                             Grid.Column="1"
+                                             Orientation="Vertical">
 
+                                    <Label VerticalOptions="Center"
+                                           Text="{Binding FirstName}"
+                                           FontAttributes="Bold" />
+
+                                    <Label Text="{Binding ShortBio}"
+                                           MaxLines="4"
+                                           VerticalOptions="Start"
+                                           FontAttributes="Italic" />
+                                </StackLayout>
+
+                                </Grid>
+                            </Border>
+                        </SwipeView>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

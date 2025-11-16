@@ -7,6 +7,8 @@ namespace ActorsApplication
         public AppShell()
         {
             InitializeComponent();
+
+            Routing.RegisterRoute(nameof(ActorDetailPage), typeof(ActorDetailPage));
         }
     }
 }

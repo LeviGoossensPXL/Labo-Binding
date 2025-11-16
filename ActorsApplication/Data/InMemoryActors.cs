@@ -17,7 +17,7 @@ namespace ActorsApplication.Data
                 {
                     LastName = "DiCaprio",
                     FirstName = "Leonardo",
-                    ProfilePicture = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F65%2F227665-050-D74A477E%2FAmerican-actor-Leonardo-DiCaprio-2016.jpg&f=1&nofb=1&ipt=bef02145bce512d12286b52156ab50b3757d48362aeaa998df4dfd33f6edf79f",
+                    ProfilePicture = "https://cdn.britannica.com/65/227665-050-D74A477E/American-actor-Leonardo-DiCaprio-2016.jpg",
                     BirthYear = 1974,
                     ShortBio = "An American actor and producer known for his roles in Titanic, Inception, and The Revenant."
                 },
@@ -33,7 +33,7 @@ namespace ActorsApplication.Data
                 {
                     LastName = "Pitt",
                     FirstName = "Brad",
-                    ProfilePicture = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brad_Pitt_2019_by_Glenn_Francis.jpg/800px-Brad_Pitt_2019_by_Glenn_Francis.jpg",
+                    ProfilePicture = "https://image.tmdb.org/t/p/w500/cckcYc2v0yh1tc9QjRelptcOBko.jpg",
                     BirthYear = 1963,
                     ShortBio = "An American actor and producer, famous for roles in Fight Club, Once Upon a Time in Hollywood, and 12 Monkeys."
                 },
@@ -41,7 +41,7 @@ namespace ActorsApplication.Data
                 {
                     LastName = "Washington",
                     FirstName = "Denzel",
-                    ProfilePicture = "https://upload.wikimedia.org/wikipedia/commons/4/40/Denzel_Washington_2018.jpg",
+                    ProfilePicture = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1jICsktMS5tcJMaKQK1VFEzbGb413MuWeashWYax8NReExWzo",
                     BirthYear = 1954,
                     ShortBio = "An American actor, director, and producer known for his roles in Training Day, Glory, and Malcolm X."
                 },
